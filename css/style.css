@@ -595,7 +595,7 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 75px;
 }
 
-.inner-content h2 {															 /* вертикальный ритм начало */
+.inner-content h2 {
 	margin-top: 60px;
 	margin-bottom: 30px;
 	font-size: 24px;
@@ -624,7 +624,7 @@ input[type="radio"].visually-hidden {
 .inner-content td {
 	padding: 10px 15px;
 	border: 2px solid #000000;
-} 																												 /* конец */
+}
 
 .inner-content .big-heading {
 	display: flex;
