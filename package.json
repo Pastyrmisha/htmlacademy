@@ -1,0 +1,31 @@
+{
+  "name": "barberhouse",
+  "version": "1.0.0",
+  "description": "htmlacademy",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0"
+  },
+  "scripts": {
+    "build": "grunt less",
+    "start": "npm run build && grunt serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pastyrmisha/htmlacademy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pastyrmisha/htmlacademy/issues"
+  },
+  "homepage": "https://github.com/Pastyrmisha/htmlacademy#readme"
+}

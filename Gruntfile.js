@@ -1,26 +1,32 @@
-less: {
-  development: {
-    options: {
-      paths: ['assets/css']
-    },
-    files: {
-      'path/to/result.css': 'path/to/source.less'
-    }
-  },
-  production: {
-    options: {
-      paths: ['assets/css'],
-      plugins: [
-        new (require('less-plugin-autoprefix'))({browsers: ["last 2 versions"]}),
-        new (require('less-plugin-clean-css'))(cleanCssOptions)
-      ],
-      modifyVars: {
-        imgPath: '"http://mycdn.com/path/to/images"',
-        bgColor: 'red'
+module.exports = function(grunt) {
+	grunt.loadNpmTasks('grunt-contrib-less');
+
+
+  grunt.initConfig({
+  	less: {
+  		style: {
+  			files: {
+  				"css/style.css": "less/style.less"
+  			}
+  		}
+  	},
+    jshint: {
+      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+      options: {
+        globals: {
+          jQuery: true
+        }
       }
     },
-    files: {
-      'path/to/result.css': 'path/to/source.less'
+    watch: {
+      files: ["less/**/.less"],
+      tasks: ["less", "postcss"]
     }
-  }
-}
+  });
+
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  grunt.registerTask('default', ['jshint']);
+
+};
