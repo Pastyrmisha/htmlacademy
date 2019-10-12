@@ -210,6 +210,47 @@
 					</div>
 				</div>
 			</footer>
+				<section class="modal modal-login">
+				<h2>Личный кабинет</h2>
+				<p>Введите свой логин и пароль</p>
+				<form action="#" class="login-form" method="post">
+					<p>
+						<label for="user-login" class="visually-hidden">Логин</label>
+						<input type="text" id="user-login" class="login-icon-user" name="login" placeholder="Логин">
+					</p>
+					<p>
+						<label for="user-password" class="visually-hidden">Пароль</label>
+						<input type="password" id="user-password" class="login-icon-password" name="password" placeholder="Пароль">
+					</p>
+					<p class="login-help">
+						<label class="login-checkbox">
+						<input class="visually-hidden" type="checkbox" name="remember">
+						<span class="checkbox-indicator"></span>
+						Запомните меня
+						</label>
+						<a href="#" class="restore">Я забыл пароль!</a>
+					</p>
+					<button class="button" type="submit">Войти</button>
+				</form>
+				<button class="modal-close" type="button">Закрыть</button>
+			</section>
+			<section class="modal modal-map">
+				<h2 class="visually-hidden">Как до нас добраться</h2>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.666168793172!2d76.86207521531318!3d43.21649078857789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883699e5725f05d%3A0x8101da9c98c72f91!2sBARBERHOUSE!5e0!3m2!1sru!2sru!4v1566504149564!5m2!1sru!2sru"
+				width="766" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+				<p>
+					<img src="../img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная
+					19/8, Санкт-Петербург">
+				</p>
+				<button class="modal-close" type="button">Закрыть</button>
+			</section>
+			<div class="modal-overlay"></div>
+
+			<script src="js/popup.js"></script>
+			<script src="js/map.js"></script>
+			<script src="js/mock.js"></script>
 		</body>
 	</html>
 
